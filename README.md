@@ -68,8 +68,9 @@ ADSL  is a domain in ADaM (Analysis Data Model) with a structure of one record p
 |35|BMI| BMI at BL (kg/m^2) |Num| 8 |BMI=(WEIGHT*703)/(HEIGHT**2) |
 
 ## Output
-- [Dataset](https://github.com/theadewole/ADSL-Dataset-Validation/blob/main/qc_adsl.sas7bdat)
+- [Dataset](https://github.com/princeadeyemoboy/ADaM-Dataset-Validation-ADSL-/blob/main/qc_adsl.sas7bdat)
 - [Program](https://github.com/princeadeyemoboy/ADaM-Dataset-Validation-ADSL-/blob/main/QC_adsl.sas)
 - [Log](https://github.com/princeadeyemoboy/ADaM-Dataset-Validation-ADSL-/blob/main/QC_adsl.log)
-- [Validate](https://github.com/theadewole/ADSL-Dataset-Validation/blob/main/Validate)
+- [Listing](https://github.com/theadewole/ADSL-Dataset-Validation/blob/main/Validate)
+- [Initial]()
 
