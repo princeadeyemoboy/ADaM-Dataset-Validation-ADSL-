@@ -1,0 +1,980 @@
+                                                                                          Tuesday, February 13, 2024 11:30:22 AM  37
+
+                                                       The COMPARE Procedure
+                                          Comparison of ORIGINAL.ADSL with ANADATA.QC_ADSL
+                                                           (Method=EXACT)
+
+                                                         Data Set Summary
+
+                                 Dataset                   Created          Modified  NVar    NObs
+
+                                 ORIGINAL.ADSL    20FEB17:10:13:01  20FEB17:10:13:01    39     742
+                                 ANADATA.QC_ADSL  13FEB24:10:30:23  13FEB24:10:30:23    40     742
+
+
+                                                         Variables Summary
+
+                                         Number of Variables in Common: 39.
+                                         Number of Variables in ANADATA.QC_ADSL but not in ORIGINAL.ADSL: 1.
+                                         Number of Variables with Differing Attributes: 18.
+
+
+                                  Listing of Variables in ANADATA.QC_ADSL but not in ORIGINAL.ADSL
+
+                                        Variable  Type  Length  Format  Label
+
+                                        AP01SDT   Num        8  DATE9.  Period 01 start date
+
+
+                                       Listing of Common Variables with Differing Attributes
+
+                Variable  Dataset          Type  Length  Format  Label
+
+                STUDYID   ORIGINAL.ADSL    Char      20  $20.    Study ID
+                          ANADATA.QC_ADSL  Char      20  $20.    Study Identifier
+                SUBJID    ORIGINAL.ADSL    Char      20  $20.    Subject Identifier for the study
+                          ANADATA.QC_ADSL  Char      20  $20.    Subject Identifier for the Study
+                SITEID    ORIGINAL.ADSL    Char      20  $20.    Study Site Number
+                          ANADATA.QC_ADSL  Char      20  $20.    Study Site Identifier
+                COUNTRY   ORIGINAL.ADSL    Char       8  $8.     Country
+                          ANADATA.QC_ADSL  Char       8  8.      Country
+                REGION    ORIGINAL.ADSL    Char      20  $20.    Region
+                          ANADATA.QC_ADSL  Char      20  $20.    REGION
+                ARM       ORIGINAL.ADSL    Char      50  $50.    Description of planned Arm
+                          ANADATA.QC_ADSL  Char      50  $50.    Description of Planned Arm
+                TRT01A    ORIGINAL.ADSL    Char      50  $50.    Actual Treatment for period 01
+                          ANADATA.QC_ADSL  Char      50  $50.    Actual Treatment for Period 01
+                TRT01AN   ORIGINAL.ADSL    Num        8  8.      Actual Treatment for period 01 (N)
+                          ANADATA.QC_ADSL  Num        8  8.      Actual Treatment for Period 01 (N)
+                TRT01EDT  ORIGINAL.ADSL    Num        8  DATE9.  Date of Last Exposure in period 01
+                          ANADATA.QC_ADSL  Num        8  DATE9.  Date of Last Exposure in Period 01
+                AP01EDT   ORIGINAL.ADSL    Num        8  DATE9.  Analysis Period 01 End Date
+                          ANADATA.QC_ADSL  Num        8  DATE9.  Period 01 end date
+                RANDDT    ORIGINAL.ADSL    Num        8  DATE9.  Date of Randomization
+                          ANADATA.QC_ADSL  Num        8  DATE9.  Date of Randomization SAFFL Safety Population Flag
+                SAFFL     ORIGINAL.ADSL    Char       1  $1.     Safety Population Flag
+                          ANADATA.QC_ADSL  Char       1  $1.
+                EOSFL     ORIGINAL.ADSL    Char       1  $1.     End of Study Flag
+                          ANADATA.QC_ADSL  Char       1  $1.     End of Study			Flag
+                                                                                          Tuesday, February 13, 2024 11:30:22 AM  38
+
+                                                       The COMPARE Procedure
+                                          Comparison of ORIGINAL.ADSL with ANADATA.QC_ADSL
+                                                           (Method=EXACT)
+
+                                       Listing of Common Variables with Differing Attributes
+
+                Variable  Dataset          Type  Length  Format  Label
+
+                EOS       ORIGINAL.ADSL    Char      50  $50.    Reason for Ending Study
+                          ANADATA.QC_ADSL  Char      50  $50.    Reason For Ending study
+                EOSCODE   ORIGINAL.ADSL    Char      50  $50.    Reason for Ending Study Code
+                          ANADATA.QC_ADSL  Char      50  $50.    Reason For Ending study Code
+                WGTB      ORIGINAL.ADSL    Num        8  8.      Weight at BL(kg)
+                          ANADATA.QC_ADSL  Num        8  8.      WEIGHT at BL (kg/m^2)
+                HGTB      ORIGINAL.ADSL    Num        8  8.      Height at BL(cm)
+                          ANADATA.QC_ADSL  Num        8  8.      HEIGHT at BL (kg/m^2)
+                BMI       ORIGINAL.ADSL    Num        8  8.      BMI at BL (Kg/m^2)
+                          ANADATA.QC_ADSL  Num        8  8.      BMI at BL (kg/m^2)
+
+
+                                                        Observation Summary
+
+                                                   Observation      Base  Compare
+
+                                                   First Obs           1        1
+                                                   First Unequal       1        1
+                                                   Last  Unequal     742      742
+                                                   Last  Obs         742      742
+
+                                 Number of Observations in Common: 742.
+                                 Total Number of Observations Read from ORIGINAL.ADSL: 742.
+                                 Total Number of Observations Read from ANADATA.QC_ADSL: 742.
+
+                                 Number of Observations with Some Compared Variables Unequal: 742.
+                                 Number of Observations with All Compared Variables Equal: 0.
+
+
+                                                     Values Comparison Summary
+
+                                  Number of Variables Compared with All Observations Equal: 23.
+                                  Number of Variables Compared with Some Observations Unequal: 16.
+                                  Number of Variables with Missing Value Differences: 12.
+                                  Total Number of Values which Compare Unequal: 5818.
+                                  Maximum Difference: 57.51.
+
+                                                                                          Tuesday, February 13, 2024 11:30:22 AM  39
+
+                                                       The COMPARE Procedure
+                                          Comparison of ORIGINAL.ADSL with ANADATA.QC_ADSL
+                                                           (Method=EXACT)
+
+                                                   Variables with Unequal Values
+
+                         Variable  Type  Len   Label                               Ndif   MaxDif  MissDif
+
+                         REGION    CHAR   20   Region                                39                 0
+                         ACTARMCD  CHAR   20   Actual Arm Code                      492                 0
+                         TRT01AN   NUM     8   Actual Treatment for period 01 (N)   493    1.000        1
+                         ARFENDT   NUM     8   Analysis Ref End Date                  1        0        1
+                         TRTEDT    NUM     8   Date of Last Exposure to Treatment    73        0       73
+                         TRT01EDT  NUM     8   Date of Last Exposure in period 01    73        0       73
+                         AP01EDT   NUM     8   Analysis Period 01 End Date           73        0       73
+                         RANDDT    NUM     8   Date of Randomization                  1        0        1
+                         RANDFL    CHAR    1   Randomized Population Flag             1                 1
+                         DTHFL     CHAR    1   Subject Death Flag                   742               742
+                         DTHDT     NUM     8   Date of Death                        125        0      125
+                         EOSFL     CHAR    1   End of Study Flag                    741                 0
+                         EOSDT     NUM     8   End of Study Date                    741        0      741
+                         EOS       CHAR   50   Reason for Ending Study              741               741
+                         EOSCODE   CHAR   50   Reason for Ending Study Code         741               741
+                         BMI       NUM     8   BMI at BL (Kg/m^2)                   741   57.510        0
+
+
+
+                                               Value Comparison Results for Variables
+
+                                     __________________________________________________________
+                                                ||  Region
+                                                ||  REGION
+                                                ||  Base Value           Compare Value
+                                            Obs ||  REGION                REGION
+                                      ________  ||  ____________________  ____________________
+                                                ||
+                                            60  ||  EASTERN EUROPE        WESTERN EUROPE
+                                            61  ||  EASTERN EUROPE        WESTERN EUROPE
+                                            62  ||  EASTERN EUROPE        WESTERN EUROPE
+                                            63  ||  EASTERN EUROPE        WESTERN EUROPE
+                                            64  ||  EASTERN EUROPE        WESTERN EUROPE
+                                            65  ||  EASTERN EUROPE        WESTERN EUROPE
+                                            66  ||  EASTERN EUROPE        WESTERN EUROPE
+                                            67  ||  EASTERN EUROPE        WESTERN EUROPE
+                                            68  ||  EASTERN EUROPE        WESTERN EUROPE
+                                            69  ||  EASTERN EUROPE        WESTERN EUROPE
+                                            70  ||  EASTERN EUROPE        WESTERN EUROPE
+                                            71  ||  EASTERN EUROPE        WESTERN EUROPE
+                                            72  ||  EASTERN EUROPE        WESTERN EUROPE
+                                            73  ||  EASTERN EUROPE        WESTERN EUROPE
+                                            74  ||  EASTERN EUROPE        WESTERN EUROPE
+                                           489  ||  WESTERN EUROPE        AFRICA
+                                           490  ||  WESTERN EUROPE        AFRICA
+                                           491  ||  WESTERN EUROPE        AFRICA
+                                           492  ||  WESTERN EUROPE        AFRICA
+                                           493  ||  WESTERN EUROPE        AFRICA
+                                                                                          Tuesday, February 13, 2024 11:30:22 AM  40
+
+                                                       The COMPARE Procedure
+                                          Comparison of ORIGINAL.ADSL with ANADATA.QC_ADSL
+                                                           (Method=EXACT)
+
+                                               Value Comparison Results for Variables
+
+                                     __________________________________________________________
+                                                ||  Region
+                                                ||  REGION
+                                                ||  Base Value           Compare Value
+                                            Obs ||  REGION                REGION
+                                      ________  ||  ____________________  ____________________
+                                                ||
+                                           494  ||  WESTERN EUROPE        AFRICA
+                                           495  ||  WESTERN EUROPE        AFRICA
+                                           496  ||  WESTERN EUROPE        AFRICA
+                                           497  ||  WESTERN EUROPE        AFRICA
+                                           498  ||  WESTERN EUROPE        AFRICA
+                                           499  ||  WESTERN EUROPE        AFRICA
+                                           500  ||  WESTERN EUROPE        AFRICA
+                                           501  ||  WESTERN EUROPE        AFRICA
+                                           502  ||  WESTERN EUROPE        AFRICA
+                                           503  ||  WESTERN EUROPE        AFRICA
+                                           504  ||  WESTERN EUROPE        AFRICA
+                                           505  ||  WESTERN EUROPE        AFRICA
+                                           506  ||  WESTERN EUROPE        AFRICA
+                                           507  ||  WESTERN EUROPE        AFRICA
+                                           508  ||  WESTERN EUROPE        AFRICA
+                                           509  ||  WESTERN EUROPE        AFRICA
+                                           510  ||  WESTERN EUROPE        AFRICA
+                                           511  ||  WESTERN EUROPE        AFRICA
+                                           512  ||  WESTERN EUROPE        AFRICA
+                                     __________________________________________________________
+
+
+                                     __________________________________________________________
+                                                ||  Actual Arm Code
+                                                ||  Base Value           Compare Value
+                                            Obs ||  ACTARMCD              ACTARMCD
+                                      ________  ||  ____________________  ____________________
+                                                ||
+                                             2  ||  CYT001 3MG            CYT0013
+                                             3  ||  CYT001 10MG           CYT0010
+                                             4  ||  CYT001 10MG           CYT0010
+                                             5  ||  CYT001 10MG           CYT0010
+                                             8  ||  CYT001 3MG            CYT0013
+                                            10  ||  CYT001 10MG           CYT0010
+                                            12  ||  CYT001 3MG            CYT0013
+                                            13  ||  CYT001 10MG           CYT0010
+                                            14  ||  CYT001 10MG           CYT0010
+                                            16  ||  CYT001 10MG           CYT0010
+                                            18  ||  CYT001 3MG            CYT0013
+                                            19  ||  CYT001 10MG           CYT0010
+                                            24  ||  CYT001 10MG           CYT0010
+                                            25  ||  CYT001 3MG            CYT0013
+                                            29  ||  CYT001 10MG           CYT0010
+                                                                                          Tuesday, February 13, 2024 11:30:22 AM  41
+
+                                                       The COMPARE Procedure
+                                          Comparison of ORIGINAL.ADSL with ANADATA.QC_ADSL
+                                                           (Method=EXACT)
+
+                                               Value Comparison Results for Variables
+
+                                     __________________________________________________________
+                                                ||  Actual Arm Code
+                                                ||  Base Value           Compare Value
+                                            Obs ||  ACTARMCD              ACTARMCD
+                                      ________  ||  ____________________  ____________________
+                                                ||
+                                            30  ||  CYT001 3MG            CYT0013
+                                            32  ||  CYT001 10MG           CYT0010
+                                            33  ||  CYT001 10MG           CYT0010
+                                            34  ||  CYT001 3MG            CYT0013
+                                            35  ||  CYT001 3MG            CYT0013
+                                            36  ||  CYT001 10MG           CYT0010
+                                            39  ||  CYT001 3MG            CYT0013
+                                            40  ||  CYT001 3MG            CYT0013
+                                            42  ||  CYT001 3MG            CYT0013
+                                            43  ||  CYT001 10MG           CYT0010
+                                            44  ||  CYT001 3MG            CYT0013
+                                            46  ||  CYT001 3MG            CYT0013
+                                            47  ||  CYT001 10MG           CYT0010
+                                            48  ||  CYT001 3MG            CYT0013
+                                            49  ||  CYT001 3MG            CYT0013
+                                            50  ||  CYT001 10MG           CYT0010
+                                            53  ||  CYT001 3MG            CYT0013
+                                            54  ||  CYT001 3MG            CYT0013
+                                            55  ||  CYT001 10MG           CYT0010
+                                            57  ||  CYT001 3MG            CYT0013
+                                            59  ||  CYT001 10MG           CYT0010
+                                            61  ||  CYT001 3MG            CYT0013
+                                            62  ||  CYT001 10MG           CYT0010
+                                            63  ||  CYT001 10MG           CYT0010
+                                            64  ||  CYT001 3MG            CYT0013
+                                            66  ||  CYT001 10MG           CYT0010
+                                            68  ||  CYT001 3MG            CYT0013
+                                            69  ||  CYT001 10MG           CYT0010
+                                            70  ||  CYT001 3MG            CYT0013
+                                            72  ||  CYT001 10MG           CYT0010
+                                            73  ||  CYT001 3MG            CYT0013
+                                            74  ||  CYT001 10MG           CYT0010
+                                            75  ||  CYT001 10MG           CYT0010
+                                            77  ||  CYT001 3MG            CYT0013
+                                            78  ||  CYT001 3MG            CYT0013
+
+NOTE: The MAXPRINT=50 printing limit has been reached for the variable ACTARMCD. No more values will be printed for this comparison.
+                                     __________________________________________________________
+                                                                                          Tuesday, February 13, 2024 11:30:22 AM  42
+
+                                                       The COMPARE Procedure
+                                          Comparison of ORIGINAL.ADSL with ANADATA.QC_ADSL
+                                                           (Method=EXACT)
+
+                                               Value Comparison Results for Variables
+
+                                     __________________________________________________________
+                                                ||  Actual Treatment for period 01 (N)
+                                                ||  Actual Treatment for Period 01 (N)
+                                                ||       Base    Compare
+                                            Obs ||    TRT01AN    TRT01AN      Diff.     % Diff
+                                      ________  ||  _________  _________  _________  _________
+                                                ||
+                                             2  ||          2          3     1.0000    50.0000
+                                             3  ||          3          2    -1.0000   -33.3333
+                                             4  ||          3          2    -1.0000   -33.3333
+                                             5  ||          3          2    -1.0000   -33.3333
+                                             8  ||          2          3     1.0000    50.0000
+                                            10  ||          3          2    -1.0000   -33.3333
+                                            12  ||          2          3     1.0000    50.0000
+                                            13  ||          3          2    -1.0000   -33.3333
+                                            14  ||          3          2    -1.0000   -33.3333
+                                            16  ||          3          2    -1.0000   -33.3333
+                                            18  ||          2          3     1.0000    50.0000
+                                            19  ||          3          2    -1.0000   -33.3333
+                                            24  ||          3          2    -1.0000   -33.3333
+                                            25  ||          2          3     1.0000    50.0000
+                                            29  ||          3          2    -1.0000   -33.3333
+                                            30  ||          2          3     1.0000    50.0000
+                                            32  ||          3          2    -1.0000   -33.3333
+                                            33  ||          3          2    -1.0000   -33.3333
+                                            34  ||          2          3     1.0000    50.0000
+                                            35  ||          2          3     1.0000    50.0000
+                                            36  ||          3          2    -1.0000   -33.3333
+                                            39  ||          2          3     1.0000    50.0000
+                                            40  ||          2          3     1.0000    50.0000
+                                            42  ||          2          3     1.0000    50.0000
+                                            43  ||          3          2    -1.0000   -33.3333
+                                            44  ||          2          3     1.0000    50.0000
+                                            46  ||          2          3     1.0000    50.0000
+                                            47  ||          3          2    -1.0000   -33.3333
+                                            48  ||          2          3     1.0000    50.0000
+                                            49  ||          2          3     1.0000    50.0000
+                                            50  ||          3          2    -1.0000   -33.3333
+                                            53  ||          2          3     1.0000    50.0000
+                                            54  ||          2          3     1.0000    50.0000
+                                            55  ||          3          2    -1.0000   -33.3333
+                                            57  ||          2          3     1.0000    50.0000
+                                            59  ||          3          2    -1.0000   -33.3333
+                                            61  ||          2          3     1.0000    50.0000
+                                            62  ||          3          2    -1.0000   -33.3333
+                                            63  ||          3          2    -1.0000   -33.3333
+                                            64  ||          2          3     1.0000    50.0000
+                                            66  ||          3          2    -1.0000   -33.3333
+                                            68  ||          2          3     1.0000    50.0000
+                                            69  ||          3          2    -1.0000   -33.3333
+                                                                                          Tuesday, February 13, 2024 11:30:22 AM  43
+
+                                                       The COMPARE Procedure
+                                          Comparison of ORIGINAL.ADSL with ANADATA.QC_ADSL
+                                                           (Method=EXACT)
+
+                                               Value Comparison Results for Variables
+
+                                     __________________________________________________________
+                                                ||  Actual Treatment for period 01 (N)
+                                                ||  Actual Treatment for Period 01 (N)
+                                                ||       Base    Compare
+                                            Obs ||    TRT01AN    TRT01AN      Diff.     % Diff
+                                      ________  ||  _________  _________  _________  _________
+                                                ||
+                                            70  ||          2          3     1.0000    50.0000
+                                            72  ||          3          2    -1.0000   -33.3333
+                                            73  ||          2          3     1.0000    50.0000
+                                            74  ||          3          2    -1.0000   -33.3333
+                                            75  ||          3          2    -1.0000   -33.3333
+                                            77  ||          2          3     1.0000    50.0000
+                                            78  ||          2          3     1.0000    50.0000
+
+NOTE: The MAXPRINT=50 printing limit has been reached for the variable TRT01AN. No more values will be printed for this comparison.
+                                     __________________________________________________________
+
+
+                                     __________________________________________________________
+                                                ||  Analysis Ref End Date
+                                                ||       Base    Compare
+                                            Obs ||    ARFENDT    ARFENDT      Diff.     % Diff
+                                      ________  ||  _________  _________  _________  _________
+                                                ||
+                                           493  ||          .  08OCT2008          .          .
+                                     __________________________________________________________
+
+
+                                     __________________________________________________________
+                                                ||  Date of Last Exposure to Treatment
+                                                ||       Base    Compare
+                                            Obs ||     TRTEDT     TRTEDT      Diff.     % Diff
+                                      ________  ||  _________  _________  _________  _________
+                                                ||
+                                             2  ||  02FEB2012          .          .          .
+                                             6  ||  31JAN2012          .          .          .
+                                            22  ||  23NOV2009          .          .          .
+                                            23  ||  07APR2010          .          .          .
+                                            44  ||  09FEB2012          .          .          .
+                                            46  ||  27JUL2010          .          .          .
+                                            56  ||  15FEB2012          .          .          .
+                                            58  ||  22MAY2010          .          .          .
+                                            82  ||  01JAN2010          .          .          .
+                                            84  ||  20FEB2012          .          .          .
+                                            89  ||  24DEC2010          .          .          .
+                                            90  ||  14JUN2010          .          .          .
+                                            96  ||  17NOV2011          .          .          .
+                                           117  ||  06FEB2012          .          .          .
+                                           126  ||  10FEB2012          .          .          .
+                                                                                          Tuesday, February 13, 2024 11:30:22 AM  44
+
+                                                       The COMPARE Procedure
+                                          Comparison of ORIGINAL.ADSL with ANADATA.QC_ADSL
+                                                           (Method=EXACT)
+
+                                               Value Comparison Results for Variables
+
+                                     __________________________________________________________
+                                                ||  Date of Last Exposure to Treatment
+                                                ||       Base    Compare
+                                            Obs ||     TRTEDT     TRTEDT      Diff.     % Diff
+                                      ________  ||  _________  _________  _________  _________
+                                                ||
+                                           128  ||  13FEB2012          .          .          .
+                                           153  ||  05JAN2012          .          .          .
+                                           196  ||  07FEB2012          .          .          .
+                                           198  ||  08FEB2012          .          .          .
+                                           203  ||  05FEB2012          .          .          .
+                                           220  ||  15FEB2012          .          .          .
+                                           251  ||  15OCT2010          .          .          .
+                                           260  ||  05DEC2010          .          .          .
+                                           274  ||  16FEB2009          .          .          .
+                                           276  ||  03JAN2010          .          .          .
+                                           278  ||  07FEB2012          .          .          .
+                                           282  ||  22SEP2011          .          .          .
+                                           290  ||  25DEC2008          .          .          .
+                                           304  ||  07FEB2012          .          .          .
+                                           325  ||  06MAR2010          .          .          .
+                                           329  ||  06FEB2012          .          .          .
+                                           330  ||  06FEB2012          .          .          .
+                                           333  ||  24MAY2010          .          .          .
+                                           357  ||  02FEB2012          .          .          .
+                                           358  ||  02FEB2012          .          .          .
+                                           359  ||  18JAN2011          .          .          .
+                                           361  ||  07FEB2012          .          .          .
+                                           378  ||  22FEB2012          .          .          .
+                                           392  ||  13FEB2012          .          .          .
+                                           400  ||  12FEB2012          .          .          .
+                                           401  ||  04FEB2012          .          .          .
+                                           404  ||  04FEB2012          .          .          .
+                                           432  ||  07FEB2012          .          .          .
+                                           436  ||  14NOV2011          .          .          .
+                                           437  ||  07MAR2010          .          .          .
+                                           444  ||  01FEB2012          .          .          .
+                                           474  ||  06FEB2012          .          .          .
+                                           482  ||  08FEB2012          .          .          .
+                                           486  ||  06OCT2010          .          .          .
+                                           488  ||  09FEB2012          .          .          .
+
+NOTE: The MAXPRINT=50 printing limit has been reached for the variable TRTEDT. No more values will be printed for this comparison.
+                                     __________________________________________________________
+                                                                                          Tuesday, February 13, 2024 11:30:22 AM  45
+
+                                                       The COMPARE Procedure
+                                          Comparison of ORIGINAL.ADSL with ANADATA.QC_ADSL
+                                                           (Method=EXACT)
+
+                                               Value Comparison Results for Variables
+
+                                     __________________________________________________________
+                                                ||  Date of Last Exposure in period 01
+                                                ||  Date of Last Exposure in Period 01
+                                                ||       Base    Compare
+                                            Obs ||   TRT01EDT   TRT01EDT      Diff.     % Diff
+                                      ________  ||  _________  _________  _________  _________
+                                                ||
+                                             2  ||  02FEB2012          .          .          .
+                                             6  ||  31JAN2012          .          .          .
+                                            22  ||  23NOV2009          .          .          .
+                                            23  ||  07APR2010          .          .          .
+                                            44  ||  09FEB2012          .          .          .
+                                            46  ||  27JUL2010          .          .          .
+                                            56  ||  15FEB2012          .          .          .
+                                            58  ||  22MAY2010          .          .          .
+                                            82  ||  01JAN2010          .          .          .
+                                            84  ||  20FEB2012          .          .          .
+                                            89  ||  24DEC2010          .          .          .
+                                            90  ||  14JUN2010          .          .          .
+                                            96  ||  17NOV2011          .          .          .
+                                           117  ||  06FEB2012          .          .          .
+                                           126  ||  10FEB2012          .          .          .
+                                           128  ||  13FEB2012          .          .          .
+                                           153  ||  05JAN2012          .          .          .
+                                           196  ||  07FEB2012          .          .          .
+                                           198  ||  08FEB2012          .          .          .
+                                           203  ||  05FEB2012          .          .          .
+                                           220  ||  15FEB2012          .          .          .
+                                           251  ||  15OCT2010          .          .          .
+                                           260  ||  05DEC2010          .          .          .
+                                           274  ||  16FEB2009          .          .          .
+                                           276  ||  03JAN2010          .          .          .
+                                           278  ||  07FEB2012          .          .          .
+                                           282  ||  22SEP2011          .          .          .
+                                           290  ||  25DEC2008          .          .          .
+                                           304  ||  07FEB2012          .          .          .
+                                           325  ||  06MAR2010          .          .          .
+                                           329  ||  06FEB2012          .          .          .
+                                           330  ||  06FEB2012          .          .          .
+                                           333  ||  24MAY2010          .          .          .
+                                           357  ||  02FEB2012          .          .          .
+                                           358  ||  02FEB2012          .          .          .
+                                           359  ||  18JAN2011          .          .          .
+                                           361  ||  07FEB2012          .          .          .
+                                           378  ||  22FEB2012          .          .          .
+                                           392  ||  13FEB2012          .          .          .
+                                           400  ||  12FEB2012          .          .          .
+                                           401  ||  04FEB2012          .          .          .
+                                           404  ||  04FEB2012          .          .          .
+                                           432  ||  07FEB2012          .          .          .
+                                                                                          Tuesday, February 13, 2024 11:30:22 AM  46
+
+                                                       The COMPARE Procedure
+                                          Comparison of ORIGINAL.ADSL with ANADATA.QC_ADSL
+                                                           (Method=EXACT)
+
+                                               Value Comparison Results for Variables
+
+                                     __________________________________________________________
+                                                ||  Date of Last Exposure in period 01
+                                                ||  Date of Last Exposure in Period 01
+                                                ||       Base    Compare
+                                            Obs ||   TRT01EDT   TRT01EDT      Diff.     % Diff
+                                      ________  ||  _________  _________  _________  _________
+                                                ||
+                                           436  ||  14NOV2011          .          .          .
+                                           437  ||  07MAR2010          .          .          .
+                                           444  ||  01FEB2012          .          .          .
+                                           474  ||  06FEB2012          .          .          .
+                                           482  ||  08FEB2012          .          .          .
+                                           486  ||  06OCT2010          .          .          .
+                                           488  ||  09FEB2012          .          .          .
+
+NOTE: The MAXPRINT=50 printing limit has been reached for the variable TRT01EDT. No more values will be printed for this comparison.
+                                     __________________________________________________________
+
+
+                                     __________________________________________________________
+                                                ||  Analysis Period 01 End Date
+                                                ||  Period 01 end date
+                                                ||       Base    Compare
+                                            Obs ||    AP01EDT    AP01EDT      Diff.     % Diff
+                                      ________  ||  _________  _________  _________  _________
+                                                ||
+                                             2  ||  01MAR2012          .          .          .
+                                             6  ||  28FEB2012          .          .          .
+                                            22  ||  21DEC2009          .          .          .
+                                            23  ||  05MAY2010          .          .          .
+                                            44  ||  08MAR2012          .          .          .
+                                            46  ||  24AUG2010          .          .          .
+                                            56  ||  14MAR2012          .          .          .
+                                            58  ||  19JUN2010          .          .          .
+                                            82  ||  29JAN2010          .          .          .
+                                            84  ||  19MAR2012          .          .          .
+                                            89  ||  21JAN2011          .          .          .
+                                            90  ||  12JUL2010          .          .          .
+                                            96  ||  15DEC2011          .          .          .
+                                           117  ||  05MAR2012          .          .          .
+                                           126  ||  09MAR2012          .          .          .
+                                           128  ||  12MAR2012          .          .          .
+                                           153  ||  02FEB2012          .          .          .
+                                           196  ||  06MAR2012          .          .          .
+                                           198  ||  07MAR2012          .          .          .
+                                           203  ||  04MAR2012          .          .          .
+                                           220  ||  14MAR2012          .          .          .
+                                           251  ||  12NOV2010          .          .          .
+                                           260  ||  02JAN2011          .          .          .
+                                           274  ||  16MAR2009          .          .          .
+                                                                                          Tuesday, February 13, 2024 11:30:22 AM  47
+
+                                                       The COMPARE Procedure
+                                          Comparison of ORIGINAL.ADSL with ANADATA.QC_ADSL
+                                                           (Method=EXACT)
+
+                                               Value Comparison Results for Variables
+
+                                     __________________________________________________________
+                                                ||  Analysis Period 01 End Date
+                                                ||  Period 01 end date
+                                                ||       Base    Compare
+                                            Obs ||    AP01EDT    AP01EDT      Diff.     % Diff
+                                      ________  ||  _________  _________  _________  _________
+                                                ||
+                                           276  ||  31JAN2010          .          .          .
+                                           278  ||  06MAR2012          .          .          .
+                                           282  ||  20OCT2011          .          .          .
+                                           290  ||  22JAN2009          .          .          .
+                                           304  ||  06MAR2012          .          .          .
+                                           325  ||  03APR2010          .          .          .
+                                           329  ||  05MAR2012          .          .          .
+                                           330  ||  05MAR2012          .          .          .
+                                           333  ||  21JUN2010          .          .          .
+                                           357  ||  01MAR2012          .          .          .
+                                           358  ||  01MAR2012          .          .          .
+                                           359  ||  15FEB2011          .          .          .
+                                           361  ||  06MAR2012          .          .          .
+                                           378  ||  21MAR2012          .          .          .
+                                           392  ||  12MAR2012          .          .          .
+                                           400  ||  11MAR2012          .          .          .
+                                           401  ||  03MAR2012          .          .          .
+                                           404  ||  03MAR2012          .          .          .
+                                           432  ||  06MAR2012          .          .          .
+                                           436  ||  12DEC2011          .          .          .
+                                           437  ||  04APR2010          .          .          .
+                                           444  ||  29FEB2012          .          .          .
+                                           474  ||  05MAR2012          .          .          .
+                                           482  ||  07MAR2012          .          .          .
+                                           486  ||  03NOV2010          .          .          .
+                                           488  ||  08MAR2012          .          .          .
+
+NOTE: The MAXPRINT=50 printing limit has been reached for the variable AP01EDT. No more values will be printed for this comparison.
+                                     __________________________________________________________
+
+
+                                     __________________________________________________________
+                                                ||  Date of Randomization
+                                                ||  Date of Randomization SAFFL Safety Popul
+                                                ||  .. ation Flag
+                                                ||       Base    Compare
+                                            Obs ||     RANDDT     RANDDT      Diff.     % Diff
+                                      ________  ||  _________  _________  _________  _________
+                                                ||
+                                           493  ||  08OCT2008          .          .          .
+                                     __________________________________________________________
+                                                                                          Tuesday, February 13, 2024 11:30:22 AM  48
+
+                                                       The COMPARE Procedure
+                                          Comparison of ORIGINAL.ADSL with ANADATA.QC_ADSL
+                                                           (Method=EXACT)
+
+                                               Value Comparison Results for Variables
+
+                                     __________________________________________________________
+                                                ||  Randomized Population Flag
+                                                ||  Base Value           Compare Value
+                                            Obs ||  RANDFL                RANDFL
+                                      ________  ||  _                     _
+                                                ||
+                                           493  ||  Y
+                                     __________________________________________________________
+
+
+                                     __________________________________________________________
+                                                ||  Subject Death Flag
+                                                ||  Base Value           Compare Value
+                                            Obs ||  DTHFL                 DTHFL
+                                      ________  ||  _                     _
+                                                ||
+                                             1  ||  N
+                                             2  ||  N
+                                             3  ||  N
+                                             4  ||  N
+                                             5  ||  N
+                                             6  ||  N
+                                             7  ||  Y
+                                             8  ||  N
+                                             9  ||  N
+                                            10  ||  N
+                                            11  ||  N
+                                            12  ||  N
+                                            13  ||  N
+                                            14  ||  N
+                                            15  ||  Y
+                                            16  ||  N
+                                            17  ||  Y
+                                            18  ||  N
+                                            19  ||  N
+                                            20  ||  N
+                                            21  ||  N
+                                            22  ||  Y
+                                            23  ||  N
+                                            24  ||  N
+                                            25  ||  N
+                                            26  ||  N
+                                            27  ||  N
+                                            28  ||  Y
+                                            29  ||  N
+                                            30  ||  Y
+                                            31  ||  Y
+                                            32  ||  N
+                                            33  ||  Y
+                                            34  ||  Y
+                                                                                          Tuesday, February 13, 2024 11:30:22 AM  49
+
+                                                       The COMPARE Procedure
+                                          Comparison of ORIGINAL.ADSL with ANADATA.QC_ADSL
+                                                           (Method=EXACT)
+
+                                               Value Comparison Results for Variables
+
+                                     __________________________________________________________
+                                                ||  Subject Death Flag
+                                                ||  Base Value           Compare Value
+                                            Obs ||  DTHFL                 DTHFL
+                                      ________  ||  _                     _
+                                                ||
+                                            35  ||  N
+                                            36  ||  N
+                                            37  ||  N
+                                            38  ||  Y
+                                            39  ||  Y
+                                            40  ||  N
+                                            41  ||  N
+                                            42  ||  Y
+                                            43  ||  Y
+                                            44  ||  N
+                                            45  ||  N
+                                            46  ||  N
+                                            47  ||  N
+                                            48  ||  N
+                                            49  ||  N
+                                            50  ||  N
+
+NOTE: The MAXPRINT=50 printing limit has been reached for the variable DTHFL. No more values will be printed for this comparison.
+                                     __________________________________________________________
+
+
+                                     __________________________________________________________
+                                                ||  Date of Death
+                                                ||       Base    Compare
+                                            Obs ||      DTHDT      DTHDT      Diff.     % Diff
+                                      ________  ||  _________  _________  _________  _________
+                                                ||
+                                             7  ||  20MAR2010          .          .          .
+                                            15  ||  10JUL2011          .          .          .
+                                            17  ||  03DEC2010          .          .          .
+                                            22  ||  26MAR2010          .          .          .
+                                            28  ||  20NOV2011          .          .          .
+                                            30  ||  11MAY2010          .          .          .
+                                            31  ||  18OCT2008          .          .          .
+                                            33  ||  07FEB2010          .          .          .
+                                            34  ||  17JUN2011          .          .          .
+                                            38  ||  23JUL2011          .          .          .
+                                            39  ||  18MAY2009          .          .          .
+                                            42  ||  12FEB2011          .          .          .
+                                            43  ||  25APR2009          .          .          .
+                                            53  ||  05MAR2011          .          .          .
+                                            58  ||  08JUL2010          .          .          .
+                                            98  ||  14APR2011          .          .          .
+                                            99  ||  09NOV2010          .          .          .
+                                                                                          Tuesday, February 13, 2024 11:30:22 AM  50
+
+                                                       The COMPARE Procedure
+                                          Comparison of ORIGINAL.ADSL with ANADATA.QC_ADSL
+                                                           (Method=EXACT)
+
+                                               Value Comparison Results for Variables
+
+                                     __________________________________________________________
+                                                ||  Date of Death
+                                                ||       Base    Compare
+                                            Obs ||      DTHDT      DTHDT      Diff.     % Diff
+                                      ________  ||  _________  _________  _________  _________
+                                                ||
+                                           106  ||  01OCT2010          .          .          .
+                                           107  ||  19NOV2008          .          .          .
+                                           110  ||  01JUN2010          .          .          .
+                                           123  ||  31JAN2010          .          .          .
+                                           146  ||  22DEC2009          .          .          .
+                                           157  ||  01OCT2010          .          .          .
+                                           158  ||  18DEC2009          .          .          .
+                                           169  ||  06JAN2012          .          .          .
+                                           179  ||  01JAN2012          .          .          .
+                                           183  ||  29JUL2011          .          .          .
+                                           188  ||  13MAR2010          .          .          .
+                                           206  ||  12JAN2010          .          .          .
+                                           214  ||  26DEC2009          .          .          .
+                                           222  ||  06FEB2011          .          .          .
+                                           227  ||  16JUL2009          .          .          .
+                                           238  ||  02NOV2011          .          .          .
+                                           239  ||  12NOV2011          .          .          .
+                                           240  ||  09OCT2009          .          .          .
+                                           241  ||  22SEP2011          .          .          .
+                                           245  ||  01NOV2011          .          .          .
+                                           247  ||  30JAN2012          .          .          .
+                                           252  ||  10JUL2010          .          .          .
+                                           254  ||  13DEC2008          .          .          .
+                                           260  ||  19OCT2011          .          .          .
+                                           270  ||  17JAN2010          .          .          .
+                                           272  ||  07MAR2011          .          .          .
+                                           274  ||  10JUN2010          .          .          .
+                                           276  ||  03JAN2010          .          .          .
+                                           283  ||  21OCT2008          .          .          .
+                                           286  ||  03SEP2010          .          .          .
+                                           287  ||  23SEP2011          .          .          .
+                                           303  ||  08OCT2011          .          .          .
+                                           310  ||  02NOV2011          .          .          .
+
+NOTE: The MAXPRINT=50 printing limit has been reached for the variable DTHDT. No more values will be printed for this comparison.
+                                     __________________________________________________________
+                                                                                          Tuesday, February 13, 2024 11:30:22 AM  51
+
+                                                       The COMPARE Procedure
+                                          Comparison of ORIGINAL.ADSL with ANADATA.QC_ADSL
+                                                           (Method=EXACT)
+
+                                               Value Comparison Results for Variables
+
+                                     __________________________________________________________
+                                                ||  End of Study Flag
+                                                ||  End of Study			Flag
+                                                ||  Base Value           Compare Value
+                                            Obs ||  EOSFL                 EOSFL
+                                      ________  ||  _                     _
+                                                ||
+                                             1  ||  Y                     N
+                                             2  ||  Y                     N
+                                             3  ||  Y                     N
+                                             4  ||  Y                     N
+                                             5  ||  Y                     N
+                                             6  ||  Y                     N
+                                             7  ||  Y                     N
+                                             8  ||  Y                     N
+                                             9  ||  Y                     N
+                                            10  ||  Y                     N
+                                            11  ||  Y                     N
+                                            12  ||  Y                     N
+                                            13  ||  Y                     N
+                                            14  ||  Y                     N
+                                            15  ||  Y                     N
+                                            16  ||  Y                     N
+                                            17  ||  Y                     N
+                                            18  ||  Y                     N
+                                            19  ||  Y                     N
+                                            20  ||  Y                     N
+                                            21  ||  Y                     N
+                                            22  ||  Y                     N
+                                            23  ||  Y                     N
+                                            24  ||  Y                     N
+                                            25  ||  Y                     N
+                                            26  ||  Y                     N
+                                            27  ||  Y                     N
+                                            28  ||  Y                     N
+                                            29  ||  Y                     N
+                                            30  ||  Y                     N
+                                            31  ||  Y                     N
+                                            32  ||  Y                     N
+                                            33  ||  Y                     N
+                                            34  ||  Y                     N
+                                            35  ||  Y                     N
+                                            36  ||  Y                     N
+                                            37  ||  Y                     N
+                                            38  ||  Y                     N
+                                            39  ||  Y                     N
+                                            40  ||  Y                     N
+                                            41  ||  Y                     N
+                                            42  ||  Y                     N
+                                            43  ||  Y                     N
+                                                                                          Tuesday, February 13, 2024 11:30:22 AM  52
+
+                                                       The COMPARE Procedure
+                                          Comparison of ORIGINAL.ADSL with ANADATA.QC_ADSL
+                                                           (Method=EXACT)
+
+                                               Value Comparison Results for Variables
+
+                                     __________________________________________________________
+                                                ||  End of Study Flag
+                                                ||  End of Study			Flag
+                                                ||  Base Value           Compare Value
+                                            Obs ||  EOSFL                 EOSFL
+                                      ________  ||  _                     _
+                                                ||
+                                            44  ||  Y                     N
+                                            45  ||  Y                     N
+                                            46  ||  Y                     N
+                                            47  ||  Y                     N
+                                            48  ||  Y                     N
+                                            49  ||  Y                     N
+                                            50  ||  Y                     N
+
+NOTE: The MAXPRINT=50 printing limit has been reached for the variable EOSFL. No more values will be printed for this comparison.
+                                     __________________________________________________________
+
+
+                                     __________________________________________________________
+                                                ||  End of Study Date
+                                                ||       Base    Compare
+                                            Obs ||      EOSDT      EOSDT      Diff.     % Diff
+                                      ________  ||  _________  _________  _________  _________
+                                                ||
+                                             1  ||  03FEB2012          .          .          .
+                                             2  ||  03FEB2012          .          .          .
+                                             3  ||  09FEB2012          .          .          .
+                                             4  ||  02FEB2012          .          .          .
+                                             5  ||  07FEB2012          .          .          .
+                                             6  ||  07FEB2012          .          .          .
+                                             7  ||  20MAR2010          .          .          .
+                                             8  ||  14FEB2012          .          .          .
+                                             9  ||  09FEB2012          .          .          .
+                                            10  ||  03FEB2012          .          .          .
+                                            11  ||  09FEB2012          .          .          .
+                                            12  ||  13FEB2012          .          .          .
+                                            13  ||  14FEB2012          .          .          .
+                                            14  ||  03FEB2012          .          .          .
+                                            15  ||  10JUL2011          .          .          .
+                                            16  ||  07FEB2012          .          .          .
+                                            17  ||  03DEC2010          .          .          .
+                                            18  ||  01OCT2010          .          .          .
+                                            19  ||  01JUN2011          .          .          .
+                                            20  ||  13FEB2012          .          .          .
+                                            21  ||  06FEB2012          .          .          .
+                                            22  ||  26MAR2010          .          .          .
+                                            23  ||  07APR2010          .          .          .
+                                            24  ||  08FEB2012          .          .          .
+                                            25  ||  06FEB2012          .          .          .
+                                                                                          Tuesday, February 13, 2024 11:30:22 AM  53
+
+                                                       The COMPARE Procedure
+                                          Comparison of ORIGINAL.ADSL with ANADATA.QC_ADSL
+                                                           (Method=EXACT)
+
+                                               Value Comparison Results for Variables
+
+                                     __________________________________________________________
+                                                ||  End of Study Date
+                                                ||       Base    Compare
+                                            Obs ||      EOSDT      EOSDT      Diff.     % Diff
+                                      ________  ||  _________  _________  _________  _________
+                                                ||
+                                            26  ||  01DEC2009          .          .          .
+                                            27  ||  14FEB2012          .          .          .
+                                            28  ||  20NOV2011          .          .          .
+                                            29  ||  07FEB2012          .          .          .
+                                            30  ||  11MAY2010          .          .          .
+                                            31  ||  18OCT2008          .          .          .
+                                            32  ||  08FEB2012          .          .          .
+                                            33  ||  07FEB2010          .          .          .
+                                            34  ||  17JUN2011          .          .          .
+                                            35  ||  07APR2010          .          .          .
+                                            36  ||  14FEB2012          .          .          .
+                                            37  ||  02FEB2012          .          .          .
+                                            38  ||  23JUL2011          .          .          .
+                                            39  ||  18MAY2009          .          .          .
+                                            40  ||  14FEB2012          .          .          .
+                                            41  ||  29OCT2009          .          .          .
+                                            42  ||  12FEB2011          .          .          .
+                                            43  ||  25APR2009          .          .          .
+                                            44  ||  10FEB2012          .          .          .
+                                            45  ||  02FEB2012          .          .          .
+                                            46  ||  08FEB2012          .          .          .
+                                            47  ||  14FEB2012          .          .          .
+                                            48  ||  01FEB2012          .          .          .
+                                            49  ||  01FEB2012          .          .          .
+                                            50  ||  01FEB2012          .          .          .
+
+NOTE: The MAXPRINT=50 printing limit has been reached for the variable EOSDT. No more values will be printed for this comparison.
+                                     __________________________________________________________
+
+
+                                     __________________________________________________________
+                                                ||  Reason for Ending Study
+                                                ||  Reason For Ending study
+                                                ||  Base Value           Compare Value
+                                            Obs ||  EOS                   EOS
+                                      ________  ||  ___________________+  ___________________+
+                                                ||
+                                             1  ||  COMPLETED
+                                             2  ||  COMPLETED
+                                             3  ||  COMPLETED
+                                             4  ||  COMPLETED
+                                             5  ||  COMPLETED
+                                             6  ||  COMPLETED
+                                             7  ||  RIGHT HEART FAILURE
+                                                                                          Tuesday, February 13, 2024 11:30:22 AM  54
+
+                                                       The COMPARE Procedure
+                                          Comparison of ORIGINAL.ADSL with ANADATA.QC_ADSL
+                                                           (Method=EXACT)
+
+                                               Value Comparison Results for Variables
+
+                                     __________________________________________________________
+                                                ||  Reason for Ending Study
+                                                ||  Reason For Ending study
+                                                ||  Base Value           Compare Value
+                                            Obs ||  EOS                   EOS
+                                      ________  ||  ___________________+  ___________________+
+                                                ||
+                                             8  ||  COMPLETED
+
+NOTE: The MAXPRINT=(50,500) printing limit has been reached. No more values will be printed.
+                                     __________________________________________________________
+
+1.	RFSTDTC, RFENDTC, DSSCAT, DSSTDTC, and EXSTDTC are all present in the developer ADSL, but these variables are absent in the RSD.
+2.	ACTARMCD, TRT01A, ARFENDT, TRTSDT, TRTSET, TRT01SDT, TRT01EDT, AP01SDT, AP01EDT, RANDDT, SAFFL, RANDFL, DTHFL, DTHDT, STYDURD, EOSFL, EOSDT, EOS, and EOSCODE are variables in QC adsl as specified by the RSD but absent in the Analysis dataset.
+3.	STUDYID, SUBJID, REGION, SITEID, AGE, SEXN, TRT01P, COUNTRY, USUBJID, AGEU, SEX, ARMCD, ARM, TRT01PN, TRT01AN, ARFSTDT, ACTARM, WGTB, HGTB, and BMI were not properly formatted in the validation datasets; these variables were all formatted and properly labeled according to the RSD stipulations.
+ 
+
+ 
+
