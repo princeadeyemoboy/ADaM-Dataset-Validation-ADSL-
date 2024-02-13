@@ -69,7 +69,7 @@ ADSL  is a domain in ADaM (Analysis Data Model) with a structure of one record p
 
 ## Output
 - [Dataset](https://github.com/theadewole/ADSL-Dataset-Validation/blob/main/qc_adsl.sas7bdat)
-- [Program](https://github.com/theadewole/ADSL-Dataset-Validation/blob/main/QC_ADSL%20(1).sas)
+- [Program](https://github.com/princeadeyemoboy/ADaM-Dataset-Validation-ADSL-/blob/main/QC_adsl.sas)
 - [Log](https://github.com/princeadeyemoboy/ADaM-Dataset-Validation-ADSL-/blob/main/QC_adsl.log)
 - [Validate](https://github.com/theadewole/ADSL-Dataset-Validation/blob/main/Validate)
 
